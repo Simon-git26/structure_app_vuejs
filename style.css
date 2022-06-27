@@ -1,3 +1,12 @@
+/* Body */
+body {
+  min-height: 110vh;
+  background-color: #3d747d;
+  background-image: linear-gradient(135deg, #3d747d 0%, #c4e0e5 100%);
+}
+
+
+/* Navbar */
 .navbar {
   transition: all 0.5s;
 }
@@ -23,6 +32,7 @@
   -o-transform:scale(1.25); /* Opera */
   transform:scale(1.25);
 }
+
 
 .navbar .navbar-brand {
   color: rgb(193, 193, 193);
@@ -54,6 +64,7 @@
 }
 
 
+
 /* Changer la navbar selon le support */
 @media (max-width: 991.98px) {
   .navbar {
@@ -66,15 +77,31 @@
 }
 
 
-
-
 .text-small {
   font-size: 0.9rem !important;
 }
 
 
-body {
-  min-height: 110vh;
-  background-color: #3d747d;
-  background-image: linear-gradient(135deg, #3d747d 0%, #c4e0e5 100%);
+
+/* Tableaux selection Film */
+.tabrow {
+  color: #fff;
+  /* La transition s'applique à la fois sur la largeur et la hauteur */
+  -webkit-transition: all 0.6s ease; /* Safari et Chrome */
+  -moz-transition: all 0.6s ease; /* Firefox */
+  -ms-transition: all 0.6s ease; /* Internet Explorer 9 */
+  -o-transition: all 0.6s ease; /* Opera */
+  transition: all 0.5s ease;
+}
+
+.tabrow:hover,
+.tabrow:focus {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  /* L'image est grossie de 25% */
+  -webkit-transform:scale(1.05); /* Safari et Chrome */
+  -moz-transform:scale(1.05); /* Firefox */
+  -ms-transform:scale(1.05); /* Internet Explorer 9 */
+  -o-transform:scale(1.05); /* Opera */
+  transform:scale(1.05);
 }
