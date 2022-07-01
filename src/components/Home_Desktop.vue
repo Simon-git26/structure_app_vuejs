@@ -48,7 +48,7 @@
     </div>
 
     <!-- A Propos de Nous -->
-    <div class="pt-2 pb-2 mt-5 mb-5" style="background-color: rgba(0, 0, 0, 0.8)">
+    <div class="pt-2 pb-5 mt-5 mb-5" style="background-color: rgba(0, 0, 0, 0.8)">
       <h3 class="pb-2 text-center text-white">A Propos de nous</h3>
 
       <div class="row text-center" style="margin: auto; width: 80%">
