@@ -19,6 +19,7 @@
                           <div class="row g-0">
                          
                               <div class="card-body">
+                                  <img class="rounded " :src="getImg(film)" v-bind:alt="film" style="width: 130px;" />
                                   <p class="card-text col-md-12 text-center">{{ film.date }}</p>
                                   <p class="card-text col-md-12 text-center">{{ film.acteurs }}</p>
                                   <p class="card-text col-md-12 text-center">{{ film.temps }}</p>
@@ -47,6 +48,13 @@
         data() {
             return {
                 film: []
+            }
+        },
+
+        methods: {
+            getImg(film) {
+                var images = require.context('../../../img/', false, /\.jpg$/);
+                return images('./' + film.image + ".jpg")
             }
         },
 
