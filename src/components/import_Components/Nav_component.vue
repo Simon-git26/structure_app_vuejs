@@ -4,7 +4,9 @@
       <div class="container-fluid">
         <a class="nav-link px-0" href="/">
           <!-- Logo -->
-          <img class="fit-picture" src="../../assets/logo.png" style="width: 70px" alt="Logo du festival de film de plein air" />
+          <div class="ml-4 logo">
+            <p>Les Films de Plein Air</p>
+          </div>
 
           <!-- Menu Burger Responsiv -->
           <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">

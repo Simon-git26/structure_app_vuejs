@@ -3,8 +3,12 @@ body {
   min-height: 110vh;
   background-color: #3d747d;
   background-image: linear-gradient(135deg, #3d747d 0%, #c4e0e5 100%);
+  font-family:cursive,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.logo {
+  font-size: 1.75rem;
+}
 
 /* Navbar */
 .navbar {
@@ -76,6 +80,10 @@ body {
   }
 }
 
+
+.carousel-item {
+  height: 620px;
+}
 
 .text-small {
   font-size: 0.9rem !important;
