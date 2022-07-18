@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container-fluid">
     <table class="table table-striped table-dark mb-5 col-lg-12 col-md-6 col-sm-3">
       <thead>
         <tr>
@@ -26,36 +26,26 @@
             :acteurs="film.acteurs" 
             :temps="film.temps"
             :image="film.image"
-            @click.prevent="localStorageFilm(film), showModal = true">Detail</button>
+           
+            @click.prevent="sessionStorageFilm(film)">Detail</button>
           </td>
         </tr>
       </tbody>
     </table>
 
 
-    <div v-if="showModal">
-        <Detail_film_component v-on:modal="showModal = false" />
-    </div>
+
   </div>
 </template>
 
 
 
-
-
 <script>
-import Detail_film_component from "../components/import_Components/Detail_film_component";
-
 export default {
   name: "Films_component",
-
-  components: {
-    Detail_film_component
-  },
-
+ 
   data () {
     return {
-      showModal : false,
 
       films: [
         { image: '1', date: '05/08/2022', title: 'Fight Club', acteurs: 'Brad Pitt, Edward Norton', temps: '2h 19min'},
@@ -64,32 +54,39 @@ export default {
       ],
     }
   },
-
   methods: {
-    // Placement de mon objet en localStorage
-    localStorageFilm: function(film){
-
-      localStorage.setItem("film", JSON.stringify(film));
+    // Placement de mon objet en sessionStorage + redirection vers Detail_film_component
+    sessionStorageFilm: function(film){
+      sessionStorage.setItem("film", JSON.stringify(film));
+      this.$router.push('/detail_film');
     },
 
     getImgUrl: function(film) {
       var images = require.context('../../img/', false, /\.jpg$/);
       return images('./' + film.image + ".jpg")
     }
-  },
+  }
 };
 </script>
 
 <style scoped>
-
 button {
-  line-height: 25px;
-  border: none;
   cursor: pointer;
-  background: white;
-  width: 6em;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.2em;
+  letter-spacing: 2.2px;
+  fill: #ffffff;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #ffffff;
+  border-radius: 50px 50px 50px 50px;
+  padding: 8px;
+  width: 6rem;
 }
-
 .tr-style {
   color: white;
   box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
@@ -98,22 +95,18 @@ button {
   font-size: 1.05em;
   width: 50rem;
 }
-
 .tr-style:hover button {
   background: #3d747d;
   color: white;
-
 }
-
 .tr-style:hover{
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
   background-color: rgba(247, 247, 247, 0.9) !important;
   font-weight: bold;
   font-size: 1em;
   color: black;
 }
-
 @media(max-width: 990px){
 .tr-style{
   margin: 20px;
