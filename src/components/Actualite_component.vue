@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <div class="card px-3 pt-3 pb-1 mb-5 mt-2 mx-auto" style="max-width: 32rem">
+    <div class="card px-3 pt-3 pb-1 mb-5 mt-2 mx-auto" style="max-width: 40rem">
      
       <div>
         <!-- Image -->
@@ -24,11 +24,11 @@
 
         <!-- Premiere card -->
         <div class="row mb-4 border-bottom pb-2">
-          <div class="col-3" style="margin: auto;">
-            <img src="../../img/1.jpg" class="img-fluid shadow-1-strong rounded" alt="premier film" />
+          <div class="col-4" style="margin: auto;">
+            <img src="../../img/film1.jpg" class="img-fluid shadow-1-strong rounded" alt="premier film" />
           </div>
 
-          <div class="col-9 text-dark">
+          <div class="col-8 text-dark">
             <p class="mb-2"><strong>Figth Club</strong></p>
             <p>
               <u class="text-decoration-none">Fight Club sera le premier film diffusé, un classique connus de tous</u>
@@ -40,11 +40,11 @@
        
         <!-- Deuxieme card -->
         <div class="row mb-4 border-bottom pb-2">
-          <div class="col-3" style="margin: auto;">
-            <img src="../../img/2.jpg" class="img-fluid shadow-1-strong rounded" alt="deuxieme film" />
+          <div class="col-4" style="margin: auto;">
+            <img src="../../img/film2.jpg" class="img-fluid shadow-1-strong rounded" alt="deuxieme film" />
           </div>
 
-          <div class="col-9 text-dark">
+          <div class="col-8 text-dark">
             <p class="mb-2"><strong>Shutter Island</strong></p>
             <p>
               <u class="text-decoration-none">Shutter Island est un film passionant qui plait au grand publique</u>
@@ -56,11 +56,11 @@
        
         <!-- Dernière card -->
         <div class="row mb-4 border-bottom pb-2">
-          <div class="col-3" style="margin: auto;">
-            <img src="../../img/3.jpg" class="img-fluid shadow-1-strong rounded" alt="Dernier film" />
+          <div class="col-4" style="margin: auto;">
+            <img src="../../img/film3.jpg" class="img-fluid shadow-1-strong rounded" alt="Dernier film" />
           </div>
 
-          <div class="col-9 text-dark">
+          <div class="col-8 text-dark">
             <p class="mb-2"><strong>Time Out</strong></p>
             <p>
               <u class="text-decoration-none">Time out est un film d'action qui plairas au plus jeune</u>

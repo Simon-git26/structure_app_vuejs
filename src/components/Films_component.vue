@@ -15,10 +15,10 @@
       <tbody>
         <tr class="tr-style" v-bind:key="index" v-for="(film, index) in films">
           <td><img class="rounded " :src="getImgUrl(film)" v-bind:alt="film" style="width: 130px;" /></td>
-          <td>{{ film.date }}</td>
-          <td>{{ film.title }}</td>
-          <td>{{ film.acteurs }}</td>
-          <td>{{ film.temps }}</td>
+          <td class="font-perso">{{ film.date }}</td>
+          <td class="font-perso">{{ film.title }}</td>
+          <td class="font-perso">{{ film.acteurs }}</td>
+          <td class="font-perso">{{ film.temps }}</td>
           <td>
             <button class="btn mt-2" 
             :date="film.date" 
@@ -26,6 +26,7 @@
             :acteurs="film.acteurs" 
             :temps="film.temps"
             :image="film.image"
+            :description="film.description"
            
             @click.prevent="sessionStorageFilm(film)">Detail</button>
           </td>
@@ -48,9 +49,9 @@ export default {
     return {
 
       films: [
-        { image: '1', date: '05/08/2022', title: 'Fight Club', acteurs: 'Brad Pitt, Edward Norton', temps: '2h 19min'},
-        { image: '2', date: '06/08/2022', title: 'Shutter Island', acteurs: 'Leonardo DiCaprio, Mark Ruffalo', temps: '2h 18min'},
-        { image: '3', date: '07/08/2022', title: 'Time Out', acteurs: 'Justin Timberlake, Amanda Seyfried', temps: '1h 49min'}
+        { image: 'film1', date: '05/08/2022', title: 'Fight Club', acteurs: 'Brad Pitt, Edward Norton', temps: '2h 19min', description: "Lorem Ipsum is industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown prin"},
+        { image: 'film2', date: '06/08/2022', title: 'Shutter Island', acteurs: 'Leonardo DiCaprio, Mark Ruffalo', temps: '2h 18min', description: "Lorem Ipsum is industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown prin"},
+        { image: 'film3', date: '07/08/2022', title: 'Time Out', acteurs: 'Justin Timberlake, Amanda Seyfried', temps: '1h 49min', description: "Lorem Ipsum is industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown prin"}
       ],
     }
   },
@@ -70,6 +71,10 @@ export default {
 </script>
 
 <style scoped>
+.font-perso {
+  font-size: 1.2rem;
+}
+
 button {
   cursor: pointer;
   font-size: 11px;

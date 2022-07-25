@@ -11,6 +11,7 @@
                                 <p class="card-text col-md-12 text-center">Date de difusion: {{ film.date }}</p>
                                 <p class="card-text col-md-12 text-center">Acteurs Principaux: {{ film.acteurs }}</p>
                                 <p class="card-text col-md-12 text-center">Durée: {{ film.temps }}</p>
+                                <p class="card-text col-md-12 text-center">Description: {{ film.description }}</p>
 
                                 <!-- Trouver un moyen pour la description qui s'adapte sur chaque film -->
 
@@ -20,7 +21,7 @@
 
                         <!-- Image Card -->
                         <div class="col-md-6">
-                            <img class="rounded w-100" :src="getImg(film)" v-bind:alt="film" />
+                            <img class="rounded" :src="getImg(film)" v-bind:alt="film" />
                         </div>
 
                     </div>
