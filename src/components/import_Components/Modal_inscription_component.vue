@@ -38,7 +38,7 @@
                                     </div>
                                        
                                     <!-- Redirection sur la page de selection de film -->
-                                    <button v-on:click="incrementClick()" type="submit" class="btn btn-style">Confirmer !</button>
+                                    <button v-on:click="incrementClick()" type="button" class="btn btn-style">Confirmer !</button>
                                
                                     <div id="counter-label" class="compteur">{{ counter }}</div>
                                

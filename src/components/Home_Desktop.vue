@@ -5,7 +5,7 @@
       <div class="carousel-inner">
         <!-- Premier Slide -->
         <div class="carousel-item active">
-          <img class="d-block w-100 size" src="../../img/1.jpg"  alt="Premier Slide" />
+          <img class="d-block w-100 cover" src="../../img/1.jpg"  alt="Premier Slide" />
 
           <!-- Bouton Selection Film -->
           <div class="carousel-caption d-none d-sm-block">
@@ -21,7 +21,7 @@
 
         <!-- Deuxieme Slide -->
         <div class="carousel-item">
-          <img class="d-block w-100 size" src="../../img/4.jpg" alt="Deuxieme Slide" />
+          <img class="d-block w-100 cover" src="../../img/4.jpg" alt="Deuxieme Slide" />
 
           <div class="carousel-caption d-none d-sm-block">
             <div class="text-caroussel">
@@ -36,7 +36,7 @@
 
           <!-- Troisième Slide -->
         <div class="carousel-item">
-          <img class="d-block w-100 size" src="../../img/3.jpg" alt="Troisieme Slide" />
+          <img class="d-block w-100 cover" src="../../img/3.jpg" alt="Troisieme Slide" />
 
           <div class="carousel-caption d-none d-sm-block">
             <div class="text-caroussel">
@@ -120,9 +120,10 @@ export default {
 </script>
 
 <style scoped>
-.size {
-  height: 620px;
+.carousel-item {
+  height: inherit;
 }
+
 .text-caroussel {
   color: rgba(255, 255, 255, 0.7);
   width: 100%;

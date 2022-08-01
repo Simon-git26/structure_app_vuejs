@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container">
+    <div class="container-fluid">
       <!-- Contact -->
       <div class="row justify-content-center">
         <h1>Contact</h1>
@@ -11,7 +11,7 @@
       </div>
 
       <div class="row input-container">
-        <div class="col-xs-12">
+        <div class="col-md-12">
           <div class="styled-input wide">
             <input type="text" required />
             <label>Nom et Prenom</label> 
@@ -32,7 +32,7 @@
           </div>
         </div>
 
-        <div class="col-xs-12">
+        <div class="col-md-12">
           <div class="styled-input wide">
             <textarea required></textarea>
             <label>Message</label>

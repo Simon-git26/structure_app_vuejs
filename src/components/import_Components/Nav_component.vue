@@ -7,12 +7,12 @@
           <div class="ml-4 logo">
             <p>Les Films de Plein Air</p>
           </div>
+        </a>
 
-          <!-- Menu Burger Responsiv -->
+        <!-- Menu Burger Responsiv -->
           <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">
             <i class="fa fa-bars"></i>
           </button>
-        </a>
 
         <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-end">
           <ul class="navbar-nav ml-auto">

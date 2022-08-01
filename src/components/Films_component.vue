@@ -1,8 +1,8 @@
 <template>
   <div class="container-fluid">
-    <table class="table table-striped table-dark mb-5 col-lg-12 col-md-6 col-sm-3">
+    <table class="table table-striped table-dark mb-5 col-lg-12 col-md-6 col-sm-3 perso">
       <thead>
-        <tr>
+        <tr class="none">
           <th scope="col">Image</th>
           <th scope="col">Date</th>
           <th scope="col">Titre</th>
@@ -13,7 +13,7 @@
       </thead>
 
       <tbody>
-        <tr class="tr-style" v-bind:key="index" v-for="(film, index) in films">
+        <tr class="tr-style perso" v-bind:key="index" v-for="(film, index) in films">
           <td><img class="rounded " :src="getImgUrl(film)" v-bind:alt="film" style="width: 130px;" /></td>
           <td class="font-perso">{{ film.date }}</td>
           <td class="font-perso">{{ film.title }}</td>
@@ -113,8 +113,16 @@ button {
   color: black;
 }
 @media(max-width: 990px){
-.tr-style{
-  margin: 20px;
+.none {
+  display: none;
+}
+.perso {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 }
 </style>
